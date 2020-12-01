@@ -29,9 +29,6 @@ def isValidCardNumber(number):
         retur="true"
     return retur
     
-
-
-
 def contain(list,numRech):
     test = "false"
     for i in list:
@@ -48,23 +45,53 @@ def moyenne(list):
 
 def jeuDeLaVie(listCase):
     test=0
-    for i in range(10):
-        listCase.append([0])
-        for o in range(10):
-            listCase[i].append(0)
+    # for i in range(10):
+    #     listCase.append([0])
+    #     for o in range(10):
+    #         listCase[i].append(0)
     # while input("Vous voulez ajouté des cases ? O/N")=="O":
     #     ligne=int(input("ligne?"))-1
     #     colonne=int(input("colonne?"))-1
     #     listCase[ligne][colonne]=1
     #     system('cls')
     #     affichage(listCase)
-    listCase[0][0]=1
-    listCase[1][1]=1
-    listCase[1][0]=1
+    listCase=[
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,1],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+    ]
     while test==0:
-        update(listCase)
-        time.sleep(1)
         affichage(listCase)
+        update(listCase)
+        time.sleep(0.010)
+        
     
 
 def update(listCase):
@@ -73,7 +100,6 @@ def update(listCase):
         listCopy.append(listCase[i])
         for o in range(len(listCase[i])):
             listCopy[i][o]=listCase[i][o]  
-    viem=0
     for i in range(len(listCase)):
         for o in range(len(listCase[i])):
             viem=0
@@ -81,15 +107,15 @@ def update(listCase):
                 hor=e-1
                 for f in range(3):                    
                     vert=f-1
-                    if i+hor!=-1 and o+vert!=-1 and i+hor<len(listCopy) and o+vert<len(listCopy[i]) and listCopy[i+hor][o+vert]==1 and hor!=0 and vert!=0:
+                    if i+hor>-1 and o+vert>-1 and i+hor<len(listCopy) and o+vert<len(listCopy[i]) and (hor!=0 or vert!=0) and listCopy[i+hor][o+vert]==1:
                         viem+=1
                         # print(viem)
             if listCopy[i][o]==1:
                 if viem<2 or viem>3:
-                    listCase[i][o]==0
+                    listCase[i][o]=0
                 else:
-                    listCase[i][o]==1
-            else:
+                    listCase[i][o]=1
+            elif listCopy[i][o]==0:
                 if viem==3:
                     listCase[i][o]=1
                 else:
@@ -97,7 +123,22 @@ def update(listCase):
 
 def affichage(list):
     system('cls')
+    print("refresh")
+    print(oui)
     for i in range(len(list)):
-        print(list[i])
+        for j in range(len(list[i])):
+            if list[i][j]==1:
+                if j!=len(list[i])-1:
+                    print("\033[0;32;47m ",end=' ')
+                else:
+                    print("\033[0;32;47m"," ")
+            else:
+                if j!=len(list[i])-1:
+                    print("\033[0;32;40m ", end = ' ')
+                else:
+                    print("\033[0;32;40m "," ")
+    print("\033[0;32;40m"," ")
+
+oui=0
 listCase=[]
 jeuDeLaVie(listCase)
